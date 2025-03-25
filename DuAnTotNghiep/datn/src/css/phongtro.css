@@ -1,0 +1,155 @@
+.search-container {
+    margin: 20px auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: white;
+    border: 2px solid #25C196;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background: #F5F7FA;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #25C196;
+    margin-right: 10px;
+}
+.filter-box {
+   display: flex;
+}
+.search-box i {
+    color: #25C196;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    flex-grow: 1;
+    color: #25C196;
+}
+.search-box input::placeholder {
+    color: rgba(37, 193, 150, 0.6);
+}
+
+/* Nút bộ lọc */
+.filter-btn {
+    width: auto;
+    background: white;
+    border: 1px solid #25C196;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #25C196;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.filter-btn i {
+    font-size: 16px;
+}
+
+/* Hiệu ứng hover */
+.filter-btn:hover {
+    background: #25C196;
+    color: white;
+}
+.filter-btn:hover i {
+    color: white;
+}
+
+/* Danh sách phòng trọ */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.room-list {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.room-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #25C196;
+}
+
+.room-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 10px;
+    flex: 1;
+}
+
+.room-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-location{
+    font-size: 14px;
+    color: #ff0000;
+}
+.room-size{
+    font-size: 14px;
+    color: #001eff;
+}
+.room-price {
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #25C196;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Phân trang */
+
+.pagination-container{
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+.page, .prev, .next {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #25C196;
+    color: #25C196;
+    border-radius: 5px;
+}
+
+.active {
+    background: #25C196;
+    color: white;
+}
