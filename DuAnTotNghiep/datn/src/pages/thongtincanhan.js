@@ -5,7 +5,7 @@ import "../css/thongtincanhan.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const ThongTinCaNhan = () => {
+const Thongtincanhan = () => {
   const [avatar, setAvatar] = useState("img/user.png");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -93,4 +93,4 @@ const ThongTinCaNhan = () => {
   );
 };
 
-export default ThongTinCaNhan;
+export default Thongtincanhan;

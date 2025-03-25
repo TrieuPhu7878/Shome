@@ -5,7 +5,7 @@ import Phongtro from "./pages/Phongtro";
 import Chitietphongtro from "./pages/Chitietphongtro";
 import Thuetro from "./pages/Thuetro";
 import Login from "./pages/Login";
-
+import Thongtincanhan from "./pages/thongtincanhan";
 function App() {
   return (
       <Routes>
@@ -14,6 +14,8 @@ function App() {
         <Route path="/chitietphongtro" element={<Chitietphongtro />} />
         <Route path="/thuetro" element={<Thuetro />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/thongtincanhan" element={<Thongtincanhan />} />
+
       </Routes>
   );
 }
